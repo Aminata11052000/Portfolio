@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aminata BA — PhD Candidate AI/Green IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── SVG ICON SPRITES ── -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <!-- map-pin -->
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0 1 18 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </symbol>
+    <!-- mail -->
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m22 7-10 7L2 7" />
+    </symbol>
+    <!-- graduation cap -->
+    <symbol id="i-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+    </symbol>
+    <!-- globe -->
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    </symbol>
+    <!-- briefcase -->
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="7" width="20" height="14" rx="2" />
+      <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+      <line x1="12" y1="12" x2="12" y2="12" />
+      <path d="M2 12h20" />
+    </symbol>
+    <!-- zap -->
+    <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+    </symbol>
+    <!-- cpu (AI) -->
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <rect x="4" y="4" width="16" height="16" rx="2" />
+      <rect x="9" y="9" width="6" height="6" />
+      <line x1="9" y1="1" x2="9" y2="4" />
+      <line x1="15" y1="1" x2="15" y2="4" />
+      <line x1="9" y1="20" x2="9" y2="23" />
+      <line x1="15" y1="20" x2="15" y2="23" />
+      <line x1="20" y1="9" x2="23" y2="9" />
+      <line x1="20" y1="14" x2="23" y2="14" />
+      <line x1="1" y1="9" x2="4" y2="9" />
+      <line x1="1" y1="14" x2="4" y2="14" />
+    </symbol>
+    <!-- code -->
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
+    </symbol>
+    <!-- terminal -->
+    <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="4 17 10 11 4 5" />
+      <line x1="12" y1="19" x2="20" y2="19" />
+    </symbol>
+    <!-- database -->
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="9" ry="3" />
+      <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+      <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+    </symbol>
+    <!-- settings -->
+    <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3" />
+      <path
+        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+    </symbol>
+    <!-- mic -->
+    <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z" />
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+      <line x1="12" y1="19" x2="12" y2="23" />
+      <line x1="8" y1="23" x2="16" y2="23" />
+    </symbol>
+    <!-- leaf -->
+    <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
+      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+    </symbol>
+    <!-- activity (medical) -->
+    <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+    </symbol>
+    <!-- eye (vision) -->
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+      <circle cx="12" cy="12" r="3" />
+    </symbol>
+    <!-- bar-chart -->
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <line x1="18" y1="20" x2="18" y2="10" />
+      <line x1="12" y1="20" x2="12" y2="4" />
+      <line x1="6" y1="20" x2="6" y2="14" />
+      <line x1="2" y1="20" x2="22" y2="20" />
+    </symbol>
+    <!-- grid (labyrinthe) -->
+    <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <rect x="3" y="3" width="7" height="7" />
+      <rect x="14" y="3" width="7" height="7" />
+      <rect x="14" y="14" width="7" height="7" />
+      <rect x="3" y="14" width="7" height="7" />
+    </symbol>
+    <!-- music -->
+    <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13" />
+      <circle cx="6" cy="18" r="3" />
+      <circle cx="18" cy="16" r="3" />
+    </symbol>
+    <!-- phone -->
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path
+        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.07-.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </symbol>
+    <!-- github -->
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+    </symbol>
+    <!-- check -->
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" />
+    </symbol>
+    <!-- spinner (cercle partiel — animé via CSS rotate) -->
+    <symbol id="i-spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+      stroke-linecap="round">
+      <path d="M12 2a10 10 0 0 1 10 10" opacity=".9" />
+      <path d="M12 2a10 10 0 0 0-10 10" opacity=".3" />
+    </symbol>
+    <!-- camera (photo placeholder) -->
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+      <circle cx="12" cy="13" r="4" />
+    </symbol>
+    <!-- arrow-right -->
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <line x1="5" y1="12" x2="19" y2="12" />
+      <polyline points="12 5 19 12 12 19" />
+    </symbol>
+    <!-- x (close) -->
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18" />
+      <line x1="6" y1="6" x2="18" y2="18" />
+    </symbol>
+    <!-- download -->
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </symbol>
+    <!-- file-text -->
+    <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+      <polyline points="14 2 14 8 20 8" />
+      <line x1="16" y1="13" x2="8" y2="13" />
+      <line x1="16" y1="17" x2="8" y2="17" />
+      <line x1="10" y1="9" x2="8" y2="9" />
+    </symbol>
+    <!-- send -->
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+      stroke-linejoin="round">
+      <line x1="22" y1="2" x2="11" y2="13" />
+      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+    </symbol>
+    <!-- layers (float badge) -->
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 2 7 12 12 22 7 12 2" />
+      <polyline points="2 17 12 22 22 17" />
+      <polyline points="2 12 12 17 22 12" />
+    </symbol>
+    <!-- trending-up -->
+    <symbol id="i-trending" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+      <polyline points="17 6 23 6 23 12" />
+    </symbol>
+  </svg>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AB<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">À propos</a></li>
+      <li><a href="#skills" class="mobile-link">Compétences</a></li>
+      <li><a href="#experience" class="mobile-link">Expérience</a></li>
+      <li><a href="#projects" class="mobile-link">Projets</a></li>
+      <li><a href="#education" class="mobile-link">Formation</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible pour PhD / Opportunités
+      </div>
+      <h1 class="hero-name">
+        Aminata <span class="highlight">BA</span>
+      </h1>
+      <p class="hero-title">Candidate PhD · Green IT &amp; Intelligence Artificielle</p>
+      <p class="hero-sub">
+        Master 2 SIGLIS · Spécialisée en IA appliquée à la Santé, Machine Learning, LLMs &amp; Green IT.<br />
+        Je construis des solutions intelligentes, responsables et pérennes.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          Voir mes projets
+          <svg class="btn-icon">
+            <use href="#i-arrow" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-n">4+</span>
+          <span class="stat-l">Projets IA</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-n">6</span>
+          <span class="stat-l">Certifications</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-n">2</span>
+          <span class="stat-l">Stages</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <!-- Photo placeholder — remplace le bloc .avatar-inner par <img src="ta-photo.jpg" ... /> -->
+        <img class="avatar-inner" src="img.png" alt="Aminata BA" />
+
+        <div class="float-badge fb-1">
+          <svg class="fb-icon">
+            <use href="#i-layers" />
+          </svg>
+          LLMs &amp; RAG
+        </div>
+        <div class="float-badge fb-2">
+          <svg class="fb-icon">
+            <use href="#i-leaf" />
+          </svg>
+          Green IT
+        </div>
+        <div class="float-badge fb-3">
+          <svg class="fb-icon">
+            <use href="#i-trending" />
+          </svg>
+          Deep Learning
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">À propos</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Passionnée par l'IA<br />au service du monde réel</h2>
+          <p>
+            Étudiante en Master 2 SIGLIS à l'Université de Pau et des Pays de l'Adour,
+            je suis titulaire d'un Master en Systèmes d'Information de l'Université
+            Alioune Diop de Bambey (Sénégal). Ma recherche se situe à l'intersection
+            de l'intelligence artificielle et du Green IT.
+          </p>
+          <p>
+            Mon expertise couvre les LLMs, le RAG, le fine-tuning de modèles,
+            le NLP et la vision par ordinateur. Je m'intéresse particulièrement
+            à l'impact environnemental des systèmes IA et à la conception de
+            solutions frugales et responsables.
+          </p>
+          <div class="about-tags">
+            <span class="tag">IA Responsable</span>
+            <span class="tag">LLMs &amp; RAG</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Green IT</span>
+            <span class="tag">Data Science</span>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-icon"><svg>
+                <use href="#i-pin" />
+              </svg></div>
+            <div>
+              <div class="info-label">Localisation</div>
+              <div class="info-val">Anglet, France</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg>
+                <use href="#i-mail" />
+              </svg></div>
+            <div>
+              <div class="info-label">Email</div>
+              <div class="info-val">baaminata075@gmail.com</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg>
+                <use href="#i-graduation" />
+              </svg></div>
+            <div>
+              <div class="info-label">Niveau</div>
+              <div class="info-val">Candidate PhD</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg>
+                <use href="#i-globe" />
+              </svg></div>
+            <div>
+              <div class="info-label">Langues</div>
+              <div class="info-val">Français · Anglais</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg>
+                <use href="#i-briefcase" />
+              </svg></div>
+            <div>
+              <div class="info-label">Disponibilité</div>
+              <div class="info-val">Thèse / Opportunités</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg>
+                <use href="#i-zap" />
+              </svg></div>
+            <div>
+              <div class="info-label">Atouts</div>
+              <div class="info-val">Analytique · Autonome · Rigoureuse</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-label">Compétences</div>
+      <h2 class="section-title">Stack technique</h2>
+      <p class="section-sub">Un spectre large, du modèle IA au déploiement production.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><svg>
+              <use href="#i-cpu" />
+            </svg></div>
+          <h3>IA &amp; Machine Learning</h3>
+          <div class="skill-tags">
+            <span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span>
+            <span>LangChain</span><span>LLMs</span><span>RAG</span>
+            <span>CNN</span><span>HuggingFace</span><span>Transformers</span>
+            <span>OpenCV</span><span>wav2vec2</span><span>NLP</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg>
+              <use href="#i-globe" />
+            </svg></div>
+          <h3>Développement Web</h3>
+          <div class="skill-tags">
+            <span>Django</span><span>Flask</span><span>FastAPI</span>
+            <span>Vue.js</span><span>React</span><span>Node.js</span>
+            <span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span>
+            <span>APIs RESTful</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg>
+              <use href="#i-terminal" />
+            </svg></div>
+          <h3>Langages</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>JavaScript</span><span>PHP</span>
+            <span>C</span><span>Shell Scripting</span>
+            <span>NumPy</span><span>Pandas</span><span>SciPy</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg>
+              <use href="#i-database" />
+            </svg></div>
+          <h3>Big Data &amp; Bases de données</h3>
+          <div class="skill-tags">
+            <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>
+            <span>Oracle</span><span>Apache Hop</span><span>ETL</span>
+            <span>Data Modeling</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg>
+              <use href="#i-settings" />
+            </svg></div>
+          <h3>DevOps &amp; Outils</h3>
+          <div class="skill-tags">
+            <span>Git / GitHub</span><span>Docker</span>
+            <span>Agile / Scrum</span><span>UML</span><span>Ollama</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg>
+              <use href="#i-mic" />
+            </svg></div>
+          <h3>Audio &amp; Speech</h3>
+          <div class="skill-tags">
+            <span>ASR</span><span>Keyword Spotting</span>
+            <span>Speech-to-Text</span><span>Ontologie</span>
+            <span>Transformers audio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label">Expérience</div>
+      <h2 class="section-title">Parcours professionnel</h2>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos>
+          <div class="timeline-marker">
+            <div class="tmarker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3 class="tcard-title">Stage Développeur Web Full-Stack</h3>
+                <p class="tcard-org">IUT de Bayonne · Université de Pau et des Pays de l'Adour, France</p>
+              </div>
+              <span class="tcard-date">Mars 2026 – Présent</span>
+            </div>
+            <ul class="tcard-list">
+              <li>Développement d'un logiciel web libre de GMAO (Gestion de la Maintenance Assistée par Ordinateur)</li>
+              <li>Transformation d'un prototype Django/Vue.js en application robuste et pérenne</li>
+              <li>Double cible : enseignement universitaire et besoins opérationnels des PME</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>Django</span><span>Vue.js</span><span>Python</span>
+              <span>PostgreSQL</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-marker">
+            <div class="tmarker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3 class="tcard-title">Stage Data Scientist</h3>
+                <p class="tcard-org">Université Gaston Berger de Saint-Louis, Sénégal</p>
+              </div>
+              <span class="tcard-date">Fév. – Juil. 2025</span>
+            </div>
+            <ul class="tcard-list">
+              <li>Conception d'un générateur de chatbots spécialisés en santé cardiovasculaire (RAG &amp; fine-tuning
+                LLM local)</li>
+              <li>Collecte, traitement et structuration de données médicales</li>
+              <li>Optimisation des modèles et développement de solutions Python</li>
+              <li>Expérimentation avec architectures Transformer et LLMs</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>RAG</span><span>LLMs</span><span>Transformers</span>
+              <span>Python</span><span>Fine-tuning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-label">Projets</div>
+      <h2 class="section-title">Ce que j'ai construit</h2>
+      <p class="section-sub">Des projets alliant IA, durabilité et impact concret.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card project-featured">
+          <div class="project-header">
+            <div class="project-icon project-icon--accent">
+              <svg>
+                <use href="#i-leaf" />
+              </svg>
+            </div>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>Emprelio</h3>
+          <p>Bilan carbone automatique pour PME/TPE. Analyse des exports comptables, catégorisation selon les facteurs
+            ADEME, calcul conforme au protocole GHG et génération de rapports PDF. 100% on-premise avec Mistral 7B via
+            Ollama, zéro donnée externe.</p>
+          <div class="project-tags">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+            <span>Mistral 7B</span><span>Ollama</span><span>WeasyPrint</span>
+          </div>
+          <div class="project-badge">Featured</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <svg>
+                <use href="#i-activity" />
+              </svg>
+            </div>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Dictée Radiologique Intelligente</h3>
+          <p class="project-type-label">Projet de recherche académique</p>
+          <p>Étude et implémentation de méthodes NLP pour la transcription et l'analyse de discours médical.
+            Reconnaissance vocale et structuration automatique de comptes rendus radiologiques.</p>
+          <div class="project-tags">
+            <span>Python</span><span>NLP</span><span>Speech-to-Text</span>
+            <span>Transformers</span><span>LLMs</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <svg>
+                <use href="#i-eye" />
+              </svg>
+            </div>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>VisionAI</h3>
+          <p>Application de description vidéo en temps réel en Wolof, Anglais et Français avec génération audio.
+            Accessible sur GitHub.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Computer Vision</span>
+            <span>TTS</span><span>Multilingue</span>
+          </div>
+          <a href="https://github.com/Aminata11052000" class="project-link" target="_blank" rel="noopener">
+            Voir sur GitHub
+            <svg class="link-arrow">
+              <use href="#i-arrow" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <svg>
+                <use href="#i-music" />
+              </svg>
+            </div>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Spotify Analysis</h3>
+          <p>Segmentation musicale via clustering (K-Means, DBSCAN), feature engineering et PCA sur données Spotify.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Scikit-learn</span>
+            <span>Pandas</span><span>PCA</span><span>DBSCAN</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <svg>
+                <use href="#i-chart" />
+              </svg>
+            </div>
+            <span class="project-year">2024</span>
+          </div>
+          <h3>Customer Segmentation</h3>
+          <p>Segmentation client par clustering non supervisé et analyse comportementale pour des actions marketing
+            ciblées.</p>
+          <div class="project-tags">
+            <span>K-Means</span><span>PCA</span>
+            <span>Matplotlib</span><span>Seaborn</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <svg>
+                <use href="#i-grid" />
+              </svg>
+            </div>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>Jeu de Labyrinthe DFS/BFS</h3>
+          <p>Implémentation et visualisation d'algorithmes de parcours de graphes DFS et BFS dans un labyrinthe
+            interactif.</p>
+          <div class="project-tags">
+            <span>Python</span><span>DFS</span><span>BFS</span>
+            <span>Algorithmique</span>
+          </div>
+          <a href="https://github.com/Aminata11052000" class="project-link" target="_blank" rel="noopener">
+            Voir sur GitHub
+            <svg class="link-arrow">
+              <use href="#i-arrow" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-label">Formation</div>
+      <h2 class="section-title">Parcours académique</h2>
+
+      <div class="edu-cert-grid">
+        <div class="edu-col">
+          <h3 class="col-title">Diplômes</h3>
+          <div class="edu-list">
+            <div class="edu-item">
+              <div class="edu-marker"></div>
+              <div class="edu-content">
+                <span class="edu-date">Sept. 2025 – Présent</span>
+                <h4>Master 2 SIGLIS</h4>
+                <p>Systèmes informatiques pour le génie de la logistique industrielle et des services</p>
+                <span class="edu-school">Université de Pau et Pays de l'Adour, France</span>
+                <div class="edu-tags"><span>Big Data</span><span>IA/ML</span><span>Projets data</span></div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-marker"></div>
+              <div class="edu-content">
+                <span class="edu-date">2024 – 2025</span>
+                <h4>Master 2 Systèmes d'Information</h4>
+                <p>Spécialisation en AI, Deep Learning, NLP et Big Data</p>
+                <span class="edu-school">Université Alioune Diop de Bambey, Sénégal</span>
+                <div class="edu-tags"><span>AI</span><span>Deep Learning</span><span>NLP</span><span>Big Data</span>
+                </div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-marker"></div>
+              <div class="edu-content">
+                <span class="edu-date">2022 – 2023</span>
+                <h4>Licence Développement &amp; Administration d'Applications</h4>
+                <p>Dev. Web, Conception et Administration de Bases de données</p>
+                <span class="edu-school">Université Alioune Diop de Bambey, Sénégal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-col">
+          <h3 class="col-title">Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item" data-cert="certifications/data-science-essentials-python.pdf"
+              data-cert-title="Data Science Essentials with Python">
+              <div class="cert-logo ibm">DS</div>
+              <div class="cert-info">
+                <span class="cert-name">Data Science Essentials with Python</span>
+                <span class="cert-org">Cisco Networking Academy · Déc. 2025</span>
+              </div>
+              <div class="cert-actions">
+                <div class="cert-check"><svg>
+                    <use href="#i-check" />
+                  </svg></div>
+                <button class="cert-view-btn" aria-label="Voir le certificat">
+                  <svg>
+                    <use href="#i-file" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cert-item" data-cert="certifications/google-data-analytics.pdf"
+              data-cert-title="Data Analytics — Google">
+              <div class="cert-logo google">G</div>
+              <div class="cert-info">
+                <span class="cert-name">Data Analytics</span>
+                <span class="cert-org">Google · 2024</span>
+              </div>
+              <div class="cert-actions">
+                <div class="cert-check"><svg>
+                    <use href="#i-check" />
+                  </svg></div>
+                <button class="cert-view-btn" aria-label="Voir le certificat">
+                  <svg>
+                    <use href="#i-file" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cert-item" data-cert="certifications/ibm-python-data-science.pdf"
+              data-cert-title="Python for Data Science — IBM">
+              <div class="cert-logo ibm">ibm</div>
+              <div class="cert-info">
+                <span class="cert-name">Python for Data Science</span>
+                <span class="cert-org">IBM · 2024</span>
+              </div>
+              <div class="cert-actions">
+                <div class="cert-check"><svg>
+                    <use href="#i-check" />
+                  </svg></div>
+                <button class="cert-view-btn" aria-label="Voir le certificat">
+                  <svg>
+                    <use href="#i-file" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cert-item" data-cert="certifications/ibm-machine-learning.pdf"
+              data-cert-title="Machine Learning — IBM">
+              <div class="cert-logo ibm">ibm</div>
+              <div class="cert-info">
+                <span class="cert-name">Machine Learning</span>
+                <span class="cert-org">IBM · 2024</span>
+              </div>
+              <div class="cert-actions">
+                <div class="cert-check"><svg>
+                    <use href="#i-check" />
+                  </svg></div>
+                <button class="cert-view-btn" aria-label="Voir le certificat">
+                  <svg>
+                    <use href="#i-file" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cert-item" data-cert="certifications/ibm-data-engineering.pdf"
+              data-cert-title="Data Engineering — IBM">
+              <div class="cert-logo ibm">ibm</div>
+              <div class="cert-info">
+                <span class="cert-name">Data Engineering</span>
+                <span class="cert-org">IBM · 2024</span>
+              </div>
+              <div class="cert-actions">
+                <div class="cert-check"><svg>
+                    <use href="#i-check" />
+                  </svg></div>
+                <button class="cert-view-btn" aria-label="Voir le certificat">
+                  <svg>
+                    <use href="#i-file" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cert-item" data-cert="certifications/ucsd-big-data.pdf"
+              data-cert-title="Big Data — UC San Diego">
+              <div class="cert-logo ucsd">UC</div>
+              <div class="cert-info">
+                <span class="cert-name">Big Data</span>
+                <span class="cert-org">UC San Diego · 2024</span>
+              </div>
+              <div class="cert-actions">
+                <div class="cert-check"><svg>
+                    <use href="#i-check" />
+                  </svg></div>
+                <button class="cert-view-btn" aria-label="Voir le certificat">
+                  <svg>
+                    <use href="#i-file" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cert-item" data-cert="certifications/cu-sql.pdf" data-cert-title="SQL — University of Colorado">
+              <div class="cert-logo cu">CU</div>
+              <div class="cert-info">
+                <span class="cert-name">SQL</span>
+                <span class="cert-org">University of Colorado · 2024</span>
+              </div>
+              <div class="cert-actions">
+                <div class="cert-check"><svg>
+                    <use href="#i-check" />
+                  </svg></div>
+                <button class="cert-view-btn" aria-label="Voir le certificat">
+                  <svg>
+                    <use href="#i-file" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cert-item" data-cert="certifications/ibm-python-data-engineering-project.pdf"
+              data-cert-title="Python Project for Data Engineering — IBM">
+              <div class="cert-logo ibm">ibm</div>
+              <div class="cert-info">
+                <span class="cert-name">Python Project for Data Engineering</span>
+                <span class="cert-org">IBM · Coursera · Mai 2024</span>
+              </div>
+              <div class="cert-actions">
+                <div class="cert-check"><svg>
+                    <use href="#i-check" />
+                  </svg></div>
+                <button class="cert-view-btn" aria-label="Voir le certificat">
+                  <svg>
+                    <use href="#i-file" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Travaillons ensemble</h2>
+      <p class="section-sub">Ouverte aux opportunités de thèse, collaborations et projets en IA &amp; Green IT.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <a href="mailto:baaminata075@gmail.com" class="contact-item">
+              <div class="ci-icon"><svg>
+                  <use href="#i-mail" />
+                </svg></div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <span class="ci-val">baaminata075@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+33753619212" class="contact-item">
+              <div class="ci-icon"><svg>
+                  <use href="#i-phone" />
+                </svg></div>
+              <div class="ci-text">
+                <span class="ci-label">Téléphone</span>
+                <span class="ci-val">+33 7 53 61 92 12</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="ci-icon"><svg>
+                  <use href="#i-pin" />
+                </svg></div>
+              <div class="ci-text">
+                <span class="ci-label">Localisation</span>
+                <span class="ci-val">55 Rue de Mirambeau, Anglet</span>
+              </div>
+            </div>
+            <a href="https://github.com/Aminata11052000" target="_blank" rel="noopener" class="contact-item">
+              <div class="ci-icon"><svg>
+                  <use href="#i-github" />
+                </svg></div>
+              <div class="ci-text">
+                <span class="ci-label">GitHub</span>
+                <span class="ci-val">Aminata11052000</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <!-- Web3Forms – remplace la valeur ci-dessous par ta clé reçue sur web3forms.com/create -->
+          <input type="hidden" name="access_key" value="150617fe-ee2f-4492-bdd0-15d0fe4adfc4" />
+          <input type="hidden" name="subject" id="formSubjectHidden" value="Nouveau message depuis ton portfolio" />
+          <input type="hidden" name="from_name" value="Portfolio Contact" />
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Objet</label>
+            <input type="text" id="subject" name="objet" placeholder="Opportunité de thèse, collaboration..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou opportunité..."
+              required></textarea>
+          </div>
+
+          <!-- Feedback -->
+          <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <svg class="btn-icon" id="submitIcon">
+              <use href="#i-send" />
+            </svg>
+            <span id="submitLabel">Envoyer le message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">AB<span class="dot">.</span></span>
+      <p>© 2026 Aminata BA · Candidate PhD Green IT &amp; IA</p>
+      <a href="https://github.com/Aminata11052000" target="_blank" rel="noopener" class="footer-gh">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- PDF Modal -->
+  <div class="pdf-modal" id="pdfModal" role="dialog" aria-modal="true" aria-label="Certificat">
+    <div class="pdf-modal-backdrop" id="pdfBackdrop"></div>
+    <div class="pdf-modal-panel">
+      <div class="pdf-modal-header">
+        <div class="pdf-modal-title-wrap">
+          <div class="pdf-modal-icon"><svg>
+              <use href="#i-file" />
+            </svg></div>
+          <span class="pdf-modal-title" id="pdfModalTitle">Certificat</span>
+        </div>
+        <div class="pdf-modal-controls">
+          <a class="pdf-modal-download" id="pdfDownloadBtn" download>
+            <svg>
+              <use href="#i-download" />
+            </svg>
+            Télécharger
+          </a>
+          <button class="pdf-modal-close" id="pdfModalClose" aria-label="Fermer">
+            <svg>
+              <use href="#i-x" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="pdf-modal-body">
+        <iframe id="pdfFrame" title="Certificat PDF" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+Dépose ici tes certificats PDF avec exactement ces noms de fichiers :
+
+  google-data-analytics.pdf          → Data Analytics (Google)
+  ibm-python-data-science.pdf        → Python for Data Science (IBM)
+  ibm-machine-learning.pdf           → Machine Learning (IBM)
+  ibm-data-engineering.pdf           → Data Engineering (IBM)
+  ucsd-big-data.pdf                  → Big Data (UC San Diego)
+  cu-sql.pdf                         → SQL (University of Colorado)
+
+Une fois les fichiers en place, les boutons "Voir le certificat" sur le portfolio
+ouvriront chaque PDF dans une fenêtre modale directement sur la page.
