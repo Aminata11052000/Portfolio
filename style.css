@@ -576,6 +576,19 @@ svg {
   animation-delay: -3s;
 }
 
+.fb-4 {
+  top: 50%;
+  right: -120px;
+  transform: translateY(-50%);
+  animation-delay: -4.5s;
+}
+
+.fb-5 {
+  top: 28px;
+  left: -15px;
+  animation-delay: -2.2s;
+}
+
 @keyframes float {
 
   0%,
